@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Cogokco 👑</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>COGOKCO</h1>
+    <nav>
+      <a href="/">Ana Sayfa</a>
+      <a href="/ne-sunariz">Ne Sunarız?</a>
+      <a href="/iletisim">İletişim</a>
+    </nav>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer>
+    <p>© 2025 Cogokco. Tüm hakları saklıdır.</p>
+  </footer>
+</body>
+</html>
